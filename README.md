@@ -18,3 +18,35 @@ nano ~/.bashrc
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 ```
+
+# delete user
+```
+sudo -i
+
+cd /home
+
+rm -rf ece4
+
+reboot
+```
+```
+sudo userdel -rf ece4
+```
+
+
+# change user
+```
+sudo -i
+
+useradd -m -s /bin/bash -G wheel ece1
+
+echo "ece1:ece@123" | chpasswd
+
+rm -r /home/ece1
+
+mv /home/ece/* /home/ece1
+
+chown -R ece1:ece1 /home/ece1
+
+reboot
+```
