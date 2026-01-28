@@ -47,6 +47,13 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 ```
 
+# install 
+```
+sudo dnf install -y tcsh ksh redhat-lsb gcc gcc-c++ make \
+libX11 libXext libXt libXft libXScrnSaver libXrender \
+libnsl elfutils-libelf glibc-devel ncurses-compat-libs \
+fontconfig freetype libpng libjpeg-turbo
+```
 # delete user
 ```
 sudo -i
