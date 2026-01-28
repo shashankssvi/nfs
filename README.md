@@ -18,7 +18,7 @@ nano ~/.bashrc
 # Synopsys License
 export SNPSLMD_LICENSE_FILE=27020@14.139.1.126
 
-export SYNOPSYS_INSTALLED_FILES="/opt/synopsys"
+export SYNOPSYS_INSTALLED_FILES="/opt/synopsys/synopsys_installed_tools"
 
 export CUSTOM_COMPILER="$SYNOPSYS_INSTALLED_FILES/customcompiler/V-2023.12"
 export CUSTOM_INFRASTRUCTURE="$SYNOPSYS_INSTALLED_FILES/custominfrastructure/V-2023.12"
