@@ -4,6 +4,7 @@ sudo nano /etc/fstab
 ```
 ## line to be added in /etc/fstab
 ```
+172.20.9.52:/home/install  /opt/synopsys  nfs  _netdev,nofail,x-systemd.automount,timeo=10,retrans=1,retry=0  0  0
 172.20.9.149:/home/install  /home/install  nfs  _netdev,nofail,x-systemd.automount,timeo=10,retrans=1,retry=0  0  0
 ```
 ## Mount cmd
@@ -11,4 +12,10 @@ sudo nano /etc/fstab
 sudo mkdir -p /home/install
 sudo systemctl daemon-reload
 sudo mount /home/install
+```
+## Check the mounts and files
+```
+sudo mount -a
+csh
+source /home/install/cshrc
 ```
