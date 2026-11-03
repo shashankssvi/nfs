@@ -16,8 +16,12 @@ sudo systemctl daemon-reload
 sudo mount /home/install
 ```
 ## To mount the nfs systems
+> All at once
 ```
 sudo mount -a
+```
+> One at a time
+```
 sudo mount cadance
 sudo mount synopsys
 ```
