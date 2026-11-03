@@ -10,6 +10,8 @@ sudo nano /etc/fstab
 ## Mount cmd
 ```
 sudo mkdir -p /home/install
+sudo mkdir -p /home/synopsys
+ln -s /opt/synopsys /home/synopsys
 sudo systemctl daemon-reload
 sudo mount /home/install
 ```
