@@ -4,16 +4,15 @@ sudo nano /etc/fstab
 ```
 ## line to be added in /etc/fstab
 ```
-172.20.9.52:/home/install  /opt/synopsys  nfs  _netdev,nofail,x-systemd.automount,timeo=10,retrans=1,retry=0  0  0
+172.20.9.52:/home/synopsys  /home/synopsys  nfs  _netdev,nofail,x-systemd.automount,timeo=10,retrans=1,retry=0  0  0
 172.20.9.189:/home/install  /home/install  nfs  _netdev,nofail,x-systemd.automount,timeo=10,retrans=1,retry=0  0  0
 ```
+
 ## Mount cmd
 ```
 sudo mkdir -p /home/install
 sudo mkdir -p /home/synopsys
-ln -s /opt/synopsys /home/synopsys
 sudo systemctl daemon-reload
-sudo mount /home/install
 ```
 ## To mount the nfs systems
 > All at once
@@ -22,8 +21,8 @@ sudo mount -a
 ```
 > One at a time
 ```
-sudo mount cadance
-sudo mount synopsys
+sudo mount /home/install
+sudo mount /home/synopsys
 ```
 
 ## Run cadence tool
